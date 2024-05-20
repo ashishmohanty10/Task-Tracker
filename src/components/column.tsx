@@ -21,7 +21,7 @@ export default function Column({
   const updateTask = useTaskStore((state) => state.updateTask);
   const draggedTask = useTaskStore((state) => state.draggedTask);
   const dragTask = useTaskStore((state) => state.dragTask);
-  const removeTask = useTaskStore((state) => state.removeTask);
+
   const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
     if (!draggedTask) return;
     updateTask(draggedTask, status);
@@ -32,7 +32,7 @@ export default function Column({
       <h2 className="ml-1 font-serif text-2xl font-semibold">{title}</h2>
 
       <div
-        className="mt-3.5 h-full w-full flex-1 rounded-xl bg-gray-700/50 p-4"
+        className="mt-3.5 h-full w-full flex-1 rounded-xl bg-gray-700/50 p-4 shadow-md"
         onDrop={handleDrop}
         onDragOver={(e) => e.preventDefault()}
       >
