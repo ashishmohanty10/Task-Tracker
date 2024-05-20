@@ -47,6 +47,6 @@ export const useTaskStore = create<State & Actions>()(
           ),
         })),
     }),
-    { name: "task-store", skipHydration: true }
+    { name: "task-store" }
   )
 );
