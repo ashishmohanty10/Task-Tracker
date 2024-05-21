@@ -1,15 +1,21 @@
 ## Getting Started
 
-First, run the development server:
+Clone the repo with
 
-```bash
+```
+git clone <code>
+```
+
+Then run
+
+```
+npm install
+```
+
+Then at last
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Live Link: https://task-tracker-opal-zeta.vercel.app/
